@@ -1,6 +1,6 @@
 # Kishore's Notes — Linux GitHub Pages site
 
-This folder is ready to publish as a **Linux-only GitHub Pages download page** for Kishore's Notes 2.0.0.
+This folder is a **Linux GitHub Pages download page** for Kishore's Notes 2.0.0.
 
 ## Included
 
@@ -12,23 +12,6 @@ This folder is ready to publish as a **Linux-only GitHub Pages download page** f
 - `downloads/SHA256SUMS.txt` — checksums
 - `.nojekyll` — tells GitHub Pages to serve the site as plain static files
 
-## Publish with GitHub Pages
-
-1. Create a new GitHub repository, for example `kishores-notes-linux`.
-2. Upload **all files and folders from this directory to the repository root**.
-3. Commit the files to the `main` branch.
-4. In GitHub, open **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select `main` and `/ (root)`.
-7. Click **Save**.
-8. GitHub will show the public Pages address after deployment finishes.
-
-The download buttons in `index.html` use relative links, so they work without editing regardless of the GitHub username or repository name.
-
-## Updating a release
-
-Replace the files in `downloads/`, update the version/file names in `index.html`, regenerate `SHA256SUMS.txt`, commit, and push.
-
 ## Architecture
 
-The included release is **Linux amd64 / x86_64 only**.
+The included release is **Linux amd64 / x86_64**.
