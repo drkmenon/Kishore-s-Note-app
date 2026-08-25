@@ -1,0 +1,43 @@
+KISHORE'S NOTES 2.0.0 — LINUX BACKTEST REPORT
+
+This Linux release was rebuilt from scratch rather than extending the earlier Electron build chain.
+
+ARCHITECTURE
+- 64-bit Linux (amd64/x86_64)
+- application core: statically linked Go executable
+- UI: local-only app interface opened in installed Chromium/Chrome/Firefox
+- local server binds only to 127.0.0.1 and uses a per-launch access token
+- notes remain compatible with Documents/Kishore's Notes/notes.json
+
+BACKTESTS PASSED
+1. Go source compilation with CGO disabled (static binary).
+2. Go unit tests.
+3. 27 starter notes loaded correctly.
+4. New note saved to notes.json and individual <id>.json file.
+5. Standard JPEG upload saved successfully.
+6. REAL HEIC/HEIF fixture converted with Linux libheif/heif-convert to JPEG.
+7. Converted output verified as a valid JPEG image.
+8. Website export created index.html, notes.json, individual note files and images.
+9. Final .deb extracted and its packaged executable self-tested successfully.
+10. Final .deb executable repeated real HEIC upload and website publishing successfully.
+11. Portable tar.gz executable self-tested successfully.
+12. Renderer JavaScript syntax checked with Node.
+13. UI structure checked for Search, New, Edit, Add Image, proper in-app caption dialog, Brain Map and Publish Website.
+14. Verified prompt() does not exist in the application UI source.
+15. Verified HEIC and HEIF are accepted by the image picker.
+16. Verified desktop CSS retains 58px vertical spines and mobile top-down layout.
+17. Verified horizontal page overflow is disabled.
+18. Verified backlinks and cloze rendering code is present.
+
+BUILT-IN SELF-TEST
+After installation, run:
+    kishores-notes --self-test
+Expected result:
+    SELF-TEST PASS: notes, JPG, real HEIC->JPEG, website export
+
+NOTE ABOUT THE .DEB
+The Debian package declares libheif-examples and xdg-utils as dependencies.
+Install with apt rather than dpkg so dependencies are installed automatically:
+    sudo apt install ./Kishores-Notes-2.0.0-linux-amd64.deb
+
+For most Ubuntu/Debian/Linux Mint systems, the .deb is the recommended file.

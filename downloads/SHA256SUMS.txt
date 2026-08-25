@@ -1,0 +1,3 @@
+d73dd4a3c53f874a5f5fc32a4acb51b833fd92275b30225181fd77cef8454d01  /mnt/data/kishores-notes-github-pages-linux/downloads/Kishores-Notes-2.0.0-linux-amd64-portable.tar.gz
+efc9c00cd0d73ea7b55bbf0bcab8e4f566cea40a4838f9f0337e5af68336bc62  /mnt/data/kishores-notes-github-pages-linux/downloads/Kishores-Notes-2.0.0-linux-amd64.deb
+875e10b8d769eb65fa79f8a08e34ccca531083338ca358e64dd7bea25fd3fcbf  /mnt/data/kishores-notes-github-pages-linux/downloads/backtest-report.txt
