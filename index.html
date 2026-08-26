@@ -47,12 +47,12 @@
 <main id="top" class="wrap">
   <div class="hero">
     <div>
-      <div class="eyebrow">Linux release · Version 2.0.0</div>
+      <div class="eyebrow">Linux release · Version 2.1.0</div>
       <h1>Your notes,<br>linked together.</h1>
       <p class="lead">Kishore's Notes is a local-first knowledge app for Linux with linked notes, automatic backlinks, cloze recall, images including HEIC/HEIF, Brain Map, search, and one-click website export.</p>
       <div class="actions">
-        <a class="button" href="downloads/Kishores-Notes-2.0.0-linux-amd64.deb" download>Download .deb</a>
-        <a class="button secondary" href="downloads/Kishores-Notes-2.0.0-linux-amd64-portable.tar.gz" download>Portable .tar.gz</a>
+        <a class="button" href="downloads/Kishores-Notes-2.1.0-linux-amd64.deb" download>Download .deb</a>
+        <a class="button secondary" href="downloads/Kishores-Notes-2.1.0-linux-amd64-portable.tar.gz" download>Portable .tar.gz</a>
       </div>
       <div class="small"><span class="only-linux">Linux only</span> · amd64 / x86_64 · local files · no account required</div>
     </div>
@@ -77,18 +77,18 @@
 
   <section id="download">
     <h2 class="section-title">Download for Linux</h2>
-    <p class="section-lead">Version 2.0.0 currently targets 64-bit Intel/AMD Linux systems (<b>amd64 / x86_64</b>).</p>
+    <p class="section-lead">Version 2.1.0 currently targets 64-bit Intel/AMD Linux systems (<b>amd64 / x86_64</b>).</p>
     <div class="download-grid">
-      <div class="download recommended"><span class="badge">Recommended</span><h3>Debian package</h3><p>Best for Ubuntu, Debian, Linux Mint and related distributions. Install with <code>apt</code> so required dependencies are installed automatically.</p><a class="button" href="downloads/Kishores-Notes-2.0.0-linux-amd64.deb" download>Download .deb</a></div>
-      <div class="download"><span class="badge">Portable</span><h3>Portable archive</h3><p>Use the portable build when you do not want to install a package. Extract it and run the included application.</p><a class="button secondary" href="downloads/Kishores-Notes-2.0.0-linux-amd64-portable.tar.gz" download>Download .tar.gz</a></div>
+      <div class="download recommended"><span class="badge">Recommended</span><h3>Debian package</h3><p>Best for Ubuntu, Debian, Linux Mint and related distributions. Install with <code>apt</code> so required dependencies are installed automatically.</p><a class="button" href="downloads/Kishores-Notes-2.1.0-linux-amd64.deb" download>Download .deb</a></div>
+      <div class="download"><span class="badge">Portable</span><h3>Portable archive</h3><p>Use the portable build when you do not want to install a package. Extract it and run the included application.</p><a class="button secondary" href="downloads/Kishores-Notes-2.1.0-linux-amd64-portable.tar.gz" download>Download .tar.gz</a></div>
     </div>
   </section>
 
   <section id="install">
     <h2 class="section-title">Install on Ubuntu / Debian / Mint</h2>
     <div class="steps">
-      <div class="step"><strong>Download the .deb</strong><span>Save <code>Kishores-Notes-2.0.0-linux-amd64.deb</code> to your Downloads folder.</span></div>
-      <div class="step"><strong>Open Terminal in Downloads</strong><span>Then install with apt:</span><pre>sudo apt install ./Kishores-Notes-2.0.0-linux-amd64.deb</pre></div>
+      <div class="step"><strong>Download the .deb</strong><span>Save <code>Kishores-Notes-2.1.0-linux-amd64.deb</code> to your Downloads folder.</span></div>
+      <div class="step"><strong>Open Terminal in Downloads</strong><span>Then install with apt:</span><pre>sudo apt install ./Kishores-Notes-2.1.0-linux-amd64.deb</pre></div>
       <div class="step"><strong>Launch Kishore's Notes</strong><span>Open it from your Applications menu, or run:</span><pre>kishores-notes</pre></div>
     </div>
     <p class="small">The Debian package declares <code>libheif-examples</code>, <code>xdg-utils</code>, and a supported browser engine as dependencies. Using <code>apt</code> is recommended rather than installing with <code>dpkg</code> alone.</p>
@@ -97,15 +97,41 @@
   <section id="verify">
     <h2 class="section-title">Built-in verification</h2>
     <div class="verify"><strong>The packaged Linux release includes a self-test.</strong><p>After installation, run:</p><pre>kishores-notes --self-test</pre><p>The expected result is:</p><pre>SELF-TEST PASS: notes, JPG, real HEIC-&gt;JPEG, website export</pre></div>
-    <p class="small" style="margin-top:14px"><a href="downloads/backtest-report.txt">Read the full Linux backtest report</a> · <a href="downloads/SHA256SUMS.txt">SHA-256 checksums</a></p>
+    <p class="small" style="margin-top:14px"><a href="downloads/Kishores-Notes-2.1.0-LINUX-FINAL-BACKTEST.txt">Read the full Linux backtest report</a> · <a href="downloads/Kishores-Notes-2.1.0-linux-amd64-SHA256SUMS.txt">SHA-256 checksums</a></p>
   </section>
 
   <section>
     <h2 class="section-title">Privacy & storage</h2>
     <p class="section-lead">Kishore's Notes is designed around local files. The application interface is served locally on your computer, binds only to <code>127.0.0.1</code>, and uses a per-launch access token. Your notes remain on your machine unless you deliberately export or publish them.</p>
   </section>
+
+<section class="section" id="release-210">
+  <div class="section-head">
+    <span class="eyebrow">Linux 2.1.0</span>
+    <h2>Current release</h2>
+  </div>
+  <div class="feature-grid">
+    <article class="feature-card">
+      <h3>Markdown</h3>
+      <p>Headings, emphasis, lists, task lists, code blocks, quotes, tables and normal web links.</p>
+    </article>
+    <article class="feature-card">
+      <h3>Automatic Created & Modified dates</h3>
+      <p>Every note records when it was created and when it was last changed.</p>
+    </article>
+    <article class="feature-card">
+      <h3>Images including HEIC</h3>
+      <p>JPG, PNG, WEBP, GIF and HEIC/HEIF are supported. HEIC/HEIF is converted to JPEG.</p>
+    </article>
+    <article class="feature-card">
+      <h3>Linked notes</h3>
+      <p>Use [[note links]], backlinks, cloze, Search and Brain Map while keeping your notes local.</p>
+    </article>
+  </div>
+</section>
+
 </main>
 
-<footer><div class="wrap"><strong>Kishore's Notes for Linux</strong><br>Version 2.0.0 · amd64 / x86_64</div></footer>
+<footer><div class="wrap"><strong>Kishore's Notes for Linux</strong><br>Version 2.1.0 · amd64 / x86_64</div></footer>
 </body>
 </html>

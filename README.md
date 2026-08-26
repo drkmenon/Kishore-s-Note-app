@@ -1,34 +1,22 @@
-# Kishore's Notes — Linux GitHub Pages site
+# Kishore's Notes Linux 2.1.0
 
-This folder is ready to publish as a **Linux-only GitHub Pages download page** for Kishore's Notes 2.0.0.
+This repository is the GitHub Pages distribution site for Kishore's Notes on Linux.
 
-## Included
+## Downloads
 
-- `index.html` — complete responsive landing/download page
-- `assets/kishores-notes.png` — application icon
-- `downloads/Kishores-Notes-2.0.0-linux-amd64.deb` — recommended Ubuntu/Debian/Mint package
-- `downloads/Kishores-Notes-2.0.0-linux-amd64-portable.tar.gz` — portable build
-- `downloads/backtest-report.txt` — release backtest report
-- `downloads/SHA256SUMS.txt` — checksums
-- `.nojekyll` — tells GitHub Pages to serve the site as plain static files
+- `Kishores-Notes-2.1.0-linux-amd64.deb` — recommended for Ubuntu/Debian/Linux Mint/Pop!_OS on Intel/AMD 64-bit Linux
+- `Kishores-Notes-2.1.0-linux-amd64-portable.tar.gz` — portable build
+- `Kishores-Notes-2.1.0-LINUX-FINAL-BACKTEST.txt` — final backtest report
+- `Kishores-Notes-2.1.0-linux-amd64-SHA256SUMS.txt` — SHA-256 checksums
 
-## Publish with GitHub Pages
+## Features
 
-1. Create a new GitHub repository, for example `kishores-notes-linux`.
-2. Upload **all files and folders from this directory to the repository root**.
-3. Commit the files to the `main` branch.
-4. In GitHub, open **Settings → Pages**.
-5. Under **Build and deployment**, choose **Deploy from a branch**.
-6. Select `main` and `/ (root)`.
-7. Click **Save**.
-8. GitHub will show the public Pages address after deployment finishes.
+Markdown, `[[internal note links]]`, backlinks, cloze, Brain Map, Search,
+external web links, images including HEIC/HEIF, automatic Created/Modified
+dates, Publish Website, and local-first storage.
 
-The download buttons in `index.html` use relative links, so they work without editing regardless of the GitHub username or repository name.
+## GitHub Pages
 
-## Updating a release
+Settings → Pages → Deploy from a branch → `main` → `/ (root)`
 
-Replace the files in `downloads/`, update the version/file names in `index.html`, regenerate `SHA256SUMS.txt`, commit, and push.
-
-## Architecture
-
-The included release is **Linux amd64 / x86_64 only**.
+For later releases, replace the files, commit, and push.

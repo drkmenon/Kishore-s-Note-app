@@ -1,0 +1,9 @@
+KISHORE'S NOTES LINUX GITHUB PAGES — 2.1.0
+
+bc3f1e6f59472992094b79b156638ec4b9901105122050ac7100e5e87d0fca60  downloads/Kishores-Notes-2.1.0-LINUX-FINAL-BACKTEST.txt
+91334f7c3471c498ae73a6b27328543f7694ae5968e3a9700f3be68a9fae34a2  downloads/Kishores-Notes-2.1.0-RELEASE-NOTES.txt
+4054aae3f0e773c4d8cd01d92e8a171b493cc31cf40456185e6805a059b638a2  downloads/Kishores-Notes-2.1.0-linux-amd64-SHA256SUMS.txt
+e729840e6550bcc6f2f7da9fd48240954cee081bd34bcddd2fef4990fab2fd7b  downloads/Kishores-Notes-2.1.0-linux-amd64-portable.tar.gz
+e8b0b899fb0b62739ff874cf07e720d6baa304528ea504057de63e6b2d4a96c3  downloads/Kishores-Notes-2.1.0-linux-amd64.deb
+4054aae3f0e773c4d8cd01d92e8a171b493cc31cf40456185e6805a059b638a2  downloads/SHA256SUMS.txt
+bc3f1e6f59472992094b79b156638ec4b9901105122050ac7100e5e87d0fca60  downloads/backtest-report.txt
