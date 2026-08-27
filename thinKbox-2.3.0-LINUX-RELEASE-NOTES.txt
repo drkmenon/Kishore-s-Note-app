@@ -1,0 +1,50 @@
+thinKbox 2.3.0 — LINUX RELEASE NOTES
+
+This release brings Linux to the thinKbox Mac 1.1.2 feature level.
+
+NEW / UPDATED
+- Product branding changed to thinKbox.
+- Header title sits beside the top-left numbered Previous/Next navigation.
+- Automatic Flashcards from every consecutive Q:/A: pair.
+- Automatic individual Flashcards from every {{cN::answer}} cloze.
+- Cloze hints {{cN::answer::hint}} are retained on flashcards.
+- Multiple clozes on one line produce separate cards; only the target is blanked.
+- Flashcard controls: Flip, Previous, Next, Shuffle, Open note.
+- Flashcard keyboard controls: Space, Left/Right arrows, Escape.
+- Spaced Inbox opt-in per note.
+- Spaced Inbox toolbar due count.
+- Again / Soon / Later / Exciting review scheduling.
+- Review scheduling does not change the note's Modified timestamp.
+- Simple interleaved Q:/A: active-recall blocks remain supported.
+
+MAC 1.1.2-LEVEL FEATURES RETAINED
+- Markdown
+- Tags / Categories right sidebar
+- full numbered navigation history
+- only five previous note spines visible at once
+- Created / Modified timestamps
+- [[internal note links]] and backlinks
+- cloze recall
+- JPG / PNG / WEBP / GIF / HEIC / HEIF images
+- HEIC/HEIF -> JPEG conversion
+- Search
+- Brain Map
+- external website links
+- Publish Website
+
+PUBLISH WEBSITE
+The exported public website matches the Mac 1.1.2 behavior: note content,
+Markdown, Q/A, tags/categories, dates, backlinks, full number navigation and
+five-spine limit are exported. Flashcards and Spaced Inbox remain local study
+features and are not exposed on the read-only public site.
+
+DATA COMPATIBILITY
+thinKbox deliberately continues to use:
+    Documents/Kishore's Notes
+and website export continues to use:
+    Documents/Kishore's Notes Website
+
+This avoids moving or duplicating existing notes from earlier releases.
+
+LINUX PACKAGE VERSION
+2.3.0 amd64 / x86_64

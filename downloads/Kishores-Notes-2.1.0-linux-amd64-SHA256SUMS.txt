@@ -1,2 +1,0 @@
-e8b0b899fb0b62739ff874cf07e720d6baa304528ea504057de63e6b2d4a96c3  Kishores-Notes-2.1.0-linux-amd64.deb
-e729840e6550bcc6f2f7da9fd48240954cee081bd34bcddd2fef4990fab2fd7b  Kishores-Notes-2.1.0-linux-amd64-portable.tar.gz
