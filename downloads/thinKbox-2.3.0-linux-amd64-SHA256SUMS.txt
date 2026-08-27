@@ -1,0 +1,2 @@
+404e1eed5ce6d9b32071a651585572048ee9c004d7874a227080b065036ea04f  thinKbox-2.3.0-linux-amd64.deb
+88db648ab31e7c4f34f337076d858b6fb6d595b923e0deb94a99aea5e6401758  thinKbox-2.3.0-linux-amd64-portable.tar.gz

@@ -1,0 +1,119 @@
+thinKbox 2.3.0 — LINUX FINAL BACKTEST
+
+GOAL
+Bring the Linux release to the thinKbox Mac 1.1.2 feature level without
+breaking the existing local note store or previous Linux capabilities.
+
+PLATFORM
+- Linux amd64 / x86_64
+- statically linked Go executable
+- no Electron, Node.js, Python, or Docker required at runtime
+- UI served only on 127.0.0.1 and opened in the default browser
+- compatible data path: Documents/Kishore's Notes
+- HEIC/HEIF conversion uses heif-convert from libheif-examples
+
+FEATURE PARITY INCLUDED
+- thinKbox branding
+- title beside top-left numbered navigation
+- automatic Q/A flashcards
+- automatic individual cloze flashcards
+- multiple clozes on a line handled separately
+- cloze hints on flashcards
+- Flashcards button with live card count
+- Flip / Previous / Next / Shuffle / Open note
+- Space / Left / Right / Escape flashcard keyboard controls
+- Spaced Inbox enrollment in New/Edit
+- Inbox due count
+- Again / Soon / Later / Exciting scheduling
+- review scheduling does not alter Modified date
+- simple Q:/A: interleaved active-recall blocks
+- Markdown
+- Tags / Categories
+- full opening history with only five previous spines rendered
+- Created / Modified dates
+- [[links]] / backlinks
+- cloze
+- images + HEIC/HEIF -> JPEG
+- Search
+- Brain Map
+- external links
+- Publish Website
+
+BACKTESTS PASSED
+1. Go source built for linux/amd64 with CGO disabled.
+2. Built executable verified as a statically linked x86-64 ELF.
+3. Built-in self-test loaded exactly 27 starter notes.
+4. Starter notes without dates were migrated to Created/Modified metadata.
+5. New note save generated valid Created/Modified timestamps.
+6. Spaced Inbox enrollment persisted in note JSON metadata.
+7. Later review scheduling produced an interval of at least 7 days.
+8. Review scheduling preserved the pre-review Modified timestamp.
+9. Real ISO Media HEIF test input imported through the .heic path.
+10. heif-convert produced a JPEG and JPEG signature verification passed.
+11. Website export produced 28 notes after the test note was saved.
+12. Exported website contained thinKbox branding.
+13. Exported website contained Tags/Categories code.
+14. Exported website contained full navigation/five-spine code.
+15. Exported website contained Q/A behavior, Markdown, and date rendering.
+16. Exported public website did not contain Flashcards controls.
+17. Exported public website did not contain Spaced Inbox controls.
+18. Local UI contained Flashcards button and extraction code.
+19. Local UI contained Spaced Inbox button and review controls.
+20. Local UI retained MAX_VISIBLE_PREVIOUS=5.
+21. Local and public HTML JavaScript passed Node syntax checks.
+22. Flashcard parser behavior test generated Q/A cards automatically.
+23. Flashcard parser behavior test generated individual cloze cards.
+24. Multiple clozes on one line produced separate cards.
+25. Non-target clozes remained visible for context.
+26. Cloze hints were retained.
+27. Fenced-code Q/A and cloze text was ignored by flashcard extraction.
+28. Editing source note text changed the derived flashcard count immediately.
+29. HTTP /api/notes returned 27 timestamped starter notes.
+30. HTTP /api/save created a Q/A + cloze note enrolled in Spaced Inbox.
+31. HTTP /api/review scheduled the note and preserved Modified date.
+32. HTTP /api/image converted the real HEIF/.heic test image to JPEG.
+33. HTTP /api/publish exported 28 notes and one image.
+34. Exported integration-test note was embedded in index.html.
+35. .deb metadata inspected successfully.
+36. .deb package keeps Debian package name kishores-notes so 2.3.0 upgrades 2.2.0.
+37. .deb provides the new thinkbox command.
+38. .deb retains kishores-notes command as a compatibility symlink.
+39. Portable archive contains thinkbox plus compatibility symlink.
+40. Exact executable extracted from FINAL .deb reported thinKbox 2.3.0.
+41. Exact executable extracted from FINAL portable archive reported thinKbox 2.3.0.
+42. Exact .deb executable passed the built-in self-test.
+43. Exact portable executable passed the built-in self-test.
+44. .deb and portable executables are byte-identical to the tested build binary.
+45. SHA-256 checksums generated for both final install packages.
+
+BUILT-IN SELF-TEST
+After installation:
+    thinkbox --self-test
+
+Expected output begins:
+    SELF-TEST PASS: 27 starter notes, timestamps, Q/A, Markdown,
+    tags/categories, full navigation history, Spaced Inbox,
+    automatic Q/A+cloze flashcards, real HEIF/HEIC-path conversion,
+    website parity export
+
+RECOMMENDED PACKAGE
+Ubuntu / Debian / Linux Mint / Pop!_OS and related amd64 systems:
+    thinKbox-2.3.0-linux-amd64.deb
+
+Install:
+    sudo apt install ./thinKbox-2.3.0-linux-amd64.deb
+
+Launch:
+    thinkbox
+
+The compatibility command also remains available:
+    kishores-notes
+
+PORTABLE PACKAGE
+    thinKbox-2.3.0-linux-amd64-portable.tar.gz
+
+Extract and run:
+    ./thinkbox
+
+Or run:
+    ./INSTALL.sh
